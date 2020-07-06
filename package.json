@@ -1,0 +1,57 @@
+{
+  "name": "alexa-skills-task-automation-cliente",
+  "version": "1.0.0",
+  "description": "Aplicação cliente para controle de PC / Mac por voz usando a Alexa.",
+  "main": "index.ts",
+  "scripts": {
+    "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpileOnly --ignore-watch node_modules src/index.ts",
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Alexa",
+    "Node",
+    "IA",
+    "Assistente",
+    "Firestore"
+  ],
+  "author": "Luan Lima <luan@yata.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-emoji": "^1.2.1",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.50",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanyata/Client-Alexa-Task-Automation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luanyata/Client-Alexa-Task-Automation/issues"
+  },
+  "homepage": "https://github.com/luanyata/Client-Alexa-Task-Automation#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  }
+}
