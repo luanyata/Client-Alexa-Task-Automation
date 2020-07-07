@@ -6,7 +6,7 @@ class SetDataFirestore {
 
     db.collection('users')
       .doc(uuid)
-      .collection('Outbound')
+      .collection('response')
       .add({
         [new Date().getTime().toString()]: message,
       });

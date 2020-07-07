@@ -24,20 +24,32 @@ Aplicação cliente para controle de PC / Mac por voz usando a Alexa.
 - NodeJs
 - Google Firestore
 
-## 🛠 Feature em Desenvolvimento:
+## 🛠 Feature:
 
- - Abrir programa grafico (Mac)
- - Abrir programa terminal (Mac)
+- ✅ Abrir programa grafico (Mac)
+- ✅ Fechar programa grafico (Mac)
+- ❌ Abrir programa terminal (Mac)
+- ❌ Fechar programa terminal (Mac)
+- ❌ Controle do play de música (Mac)
+- ❌ Transmisão de tela (Mac)
+- ❌ Criar Rotina (Mac)
+- ❌ Abrir um site (Mac)
 
 
 
 ## 📃 Estrutura do documento no Firestore
 - Collection User
   - Document UserId
-    - Collection Inbound
-    - Collection Outbound
+    - Commands
       - DocumentId
-        - Fields: {dateComand: nameCommand}
+        - Fields:
+           ```
+           {
+             program: nameProgram,
+             type: typeOperation,
+             dateExecute: nameCommand
+            }
+          ```
 
 
 ## 🎨 Padronização de Código
